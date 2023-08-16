@@ -24,6 +24,9 @@ class SendTestEmailCommand extends WP_CLI_Command
 	 */
 	public function __invoke($args, $assoc_args)
 	{
+
+		require_once(ABSPATH . '/wp-load.php');
+
 		wp_mail(get_bloginfo('admin_email'), 'This is a test email !', 'Sent from ' . get_bloginfo('site_url'), ['Content-Type: text/html; charset=UTF-8']);
 		WP_CLI::success('Hello World!');
 	}
