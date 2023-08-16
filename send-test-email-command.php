@@ -1,6 +1,6 @@
 <?php
 
-namespace WP_CLI\SendEmail;
+namespace WP_CLI\SendTestEmail;
 
 use WP_CLI;
 
